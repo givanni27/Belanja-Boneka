@@ -1,11 +1,14 @@
-# Menggunakan image FrankenPHP yang mendukung PHP 8.2
+# Image FrankenPHP dengan PHP 8.2
 FROM dunglas/frankenphp:latest-php8.2
 
-# Menginstall ekstensi mysqli dan pdo_mysql yang tadi hilang
+# Install ekstensi mysqli dan pdo_mysql
 RUN install-php-extensions mysqli pdo_mysql
 
-# Menyalin semua file project kamu ke folder /app (standar FrankenPHP)
+# Copy project
 COPY . /app
 
-# Mengatur folder kerja
+# Set working directory
 WORKDIR /app
+
+# Start FrankenPHP (tanpa flag)
+CMD ["frankenphp", "run"]
