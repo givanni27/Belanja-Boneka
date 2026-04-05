@@ -10,5 +10,4 @@ COPY . /app
 # Mengatur folder kerja
 WORKDIR /app
 
-# Mengatur document root ke folder 'public' agar index.php bisa diakses
-ENV FRANKENPHP_DOCUMENT_ROOT=/app/public
+CMD ["frankenphp", "-S", "0.0.0.0:$PORT", "public/index.php"]
