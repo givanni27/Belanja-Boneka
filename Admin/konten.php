@@ -12,7 +12,7 @@ if (isset($_GET['menu'])) {
             include('proses/proses_tambah.php');
             break;
 
-        case 'project':
+        case 'product':
             include('content/product.php');
             break;
 
