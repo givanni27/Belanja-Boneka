@@ -19,19 +19,6 @@ if (isset($_GET['menu'])) {
         case 'pesanan':
             include('content/pesanan.php');
             break;
-
-        case 'pengaduan_selesai':
-            include('konten/pengaduan_selesai.php');
-            break;
-        case 'pengaduan_detail_selesai':
-            include('konten/pengaduan_detail_selesai.php');
-            break;
-        case 'laporan_pengaduan':
-            include('konten/laporan_pengaduan.php');
-            break;
-        case 'cetak_laporan':
-            include('konten/cetak_laporan.php');
-            break;
     }
 } else {
     include('content/dashboard.php');
