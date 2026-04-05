@@ -25,7 +25,7 @@
                     <!-- general form elements -->
                     <div class="card card-primary">
                         <div class="card-header text-center">
-                            <h3 class="card-title float-none">E-gift admin</h3>
+                            <h3 class="card-title float-none">Belanja-Boneka admin</h3>
                         </div>
 
                         <?php
