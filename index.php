@@ -442,5 +442,3 @@ include('Admin/database.php')
 
 
 </html>
-
-
