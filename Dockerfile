@@ -1,14 +1,18 @@
-# Menggunakan image FrankenPHP yang mendukung PHP 8.2
+# Gunakan FrankenPHP image PHP 8.2
 FROM dunglas/frankenphp:latest-php8.2
 
-# Menginstall ekstensi yang dibutuhkan
+# Install ekstensi MySQL
 RUN install-php-extensions mysqli pdo_mysql
 
 # Set folder kerja
 WORKDIR /app
 
-# Salin semua file project ke /app
+# Salin semua file project
 COPY . /app
 
-# CMD menjalankan FrankenPHP di port yang diberikan Railway
-CMD ["frankenphp", "-S", "0.0.0.0:$PORT", "public/index.php"]
+# Set environment variable untuk Railway
+ENV PORT=8080
+
+# Pastikan container langsung menjalankan FrankenPHP
+ENTRYPOINT ["frankenphp"]
+CMD ["-S", "0.0.0.0:8080", "public/index.php"]
