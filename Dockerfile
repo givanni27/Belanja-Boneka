@@ -1,14 +1,14 @@
-# Image FrankenPHP dengan PHP 8.2
-FROM dunglas/frankenphp:latest-php8.2
+FROM php:8.2-cli
 
-# Install ekstensi mysqli dan pdo_mysql
-RUN install-php-extensions mysqli pdo_mysql
+# Install extensions
+RUN docker-php-ext-install mysqli pdo pdo_mysql
 
-# Copy project
+# Copy aplikasi
 COPY . /app
-
-# Set working directory
 WORKDIR /app
 
-# Start FrankenPHP (tanpa flag)
-CMD ["frankenphp", "run"]
+# Set port Railway
+ENV PORT=8080
+
+# Start FrankenPHP
+CMD ["php", "-S", "0.0.0.0:${PORT}", "-t", "public"]
