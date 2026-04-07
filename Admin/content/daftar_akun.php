@@ -31,9 +31,6 @@
                     <button type="button" class="btn btn-tool" data-card-widget="remove" title="Remove">
                         <i class="fas fa-times"></i>
                     </button>
-                    <a class="btn btn-tool" title="Add New" data-toggle="modal" data-target="#modalformulir">
-                        <i class="fas fa-file-import"></i>
-                    </a>
                 </div>
             </div>
             <div class="card-body p-0">
