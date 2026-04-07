@@ -33,7 +33,7 @@
                             <tr>
                                 <th style="width: 120px" class="text-center">ID Invoice</th>
                                 <th style="width: 120px" class="text-center">Pelanggan</th>
-                                <th class="text-center">Total Bayar</th>
+                                <th style="width: 50px" class="text-center">Total Bayar</th>
                                 <th style="width: 50px" class="text-center">Tanggal</th>
                                 <th style="width: 50px" class="text-center">Status</th>
                                 <th class="text-right">Aksi</th>
