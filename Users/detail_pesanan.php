@@ -94,6 +94,9 @@ $query_items = mysqli_query($koneksi, "SELECT transaction_details.*, products.na
                         <p class="text-[10px] font-bold text-gray-400 uppercase tracking-tighter mb-2">Akun Pemesan</p>
                         <p class="text-sm font-bold text-gray-800"><?= htmlspecialchars($trans['nama_pembeli'] ?? $nama_akun) ?></p>
                         <p class="text-xs text-gray-500 mt-1"><?= htmlspecialchars($trans['no_hp'] ?? '') ?></p>
+
+                        <p class="text-[10px] text-gray-400 font-bold uppercase">Nomer Pengirim</p>
+                        <p class="font-bold text-gray-800">6282340871922</p>
                     </div>
                     <div>
                         <p class="text-[10px] font-bold text-gray-400 uppercase tracking-tighter mb-2">Alamat Tujuan</p>
