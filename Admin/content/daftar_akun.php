@@ -45,6 +45,7 @@
                                 <th style="width: 150px">Nama Akun</th>
                                 <th style="width: 10px;" class="text-center">Password</th>
                                 <th style="width: 10px;" class="text-center">Email</th>
+                                <th style="width: 150px">Jumlah Order</th>
                                 <th class="text-right">Aksi</th>
                             </tr>
                         </thead>
@@ -60,13 +61,23 @@
                                     </td>
                                     <td>
                                         <?php echo $row['username_users']; ?>
-                                        <br />
+                                        <br/>
                                     </td>
                                     <td class="text-center">
                                         <?php echo $row['password']; ?>
                                     </td>
                                     <td class="text-center">
                                         <?php echo $row['email']; ?>
+                                    </td>
+                                
+                                <?php
+                                  $ql = "SELECT nama_pembeli FROM transactions";
+                                  $sl = mysqli_query($koneksi, $ql);
+                                  $total_order = mysqli_num_rows($sl);
+                                 ?>
+                                    <td>
+                                        <?= $total_order ?>
+                                        <br/>
                                     </td>
                                     <td class="project-actions text-right">
                                         <a data-toggle="modal" data-target="#editModal<?= $row['id_users']; ?>"
