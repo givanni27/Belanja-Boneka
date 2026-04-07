@@ -45,7 +45,7 @@
                                 <th style="width: 150px">Nama Akun</th>
                                 <th style="width: 10px;" class="text-center">Password</th>
                                 <th style="width: 10px;" class="text-center">Email</th>
-                                <th style="width: 150px">Jumlah Order</th>
+                                <th style="width: 10px">Jumlah Order</th>
                                 <th class="text-right">Aksi</th>
                             </tr>
                         </thead>
