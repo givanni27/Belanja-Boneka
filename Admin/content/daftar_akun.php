@@ -42,10 +42,10 @@
                         <thead>
                             <tr>
                                 <th style="width: 20px" class="text-center">id</th>
-                                <th style="width: 100px">Nama Akun</th>
+                                <th style="width: 100px" class="text-center">Akun</th>
                                 <th style="width: 20px;" class="text-center">Password</th>
                                 <th style="width: 20px;" class="text-center">Email</th>
-                                <th style="width: 20px" class="text-center">Jumlah Order</th>
+                                <th style="width: 20px" class="text-center">Order</th>
                                 <th class="text-right">Aksi</th>
                             </tr>
                         </thead>
