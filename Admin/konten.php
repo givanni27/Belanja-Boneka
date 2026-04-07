@@ -11,6 +11,10 @@ if (isset($_GET['menu'])) {
         case 'proses_tambah':
             include('proses/proses_tambah.php');
             break;
+        
+        case 'proses_tambah_akun':
+            include('proses/proses_tambah_akun.php');
+            break;
 
         case 'product':
             include('content/product.php');
@@ -18,6 +22,10 @@ if (isset($_GET['menu'])) {
 
         case 'pesanan':
             include('content/pesanan.php');
+            break;
+        
+         case 'daftar_akun':
+            include('content/daftar_akun.php');
             break;
     }
 } else {
