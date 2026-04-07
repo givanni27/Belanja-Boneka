@@ -8,7 +8,7 @@ if (!isset($_SESSION['id_admin']))
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['proses'])) {
     extract($_POST);
 
-    $name = mysqli_real_escape_string($koneksi, $name);
+    $username_users = mysqli_real_escape_string($koneksi, $username_users);
     $sql = ($proses === 'tambah')
         ? "INSERT INTO users (username_users, password, email) VALUES ('$username_users', '$password', '$email')"
         : "UPDATE users SET username_users='$username_users', password='$password', email='$email' WHERE id_users='$id_users'";
