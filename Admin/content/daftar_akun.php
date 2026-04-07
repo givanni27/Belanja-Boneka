@@ -75,7 +75,7 @@
                                   $sl = mysqli_query($koneksi, $ql);
                                   $total_order = mysqli_num_rows($sl);
                                  ?>
-                                    <td>
+                                    <td class="text-center">
                                         <?= $total_order ?>
                                         <br/>
                                     </td>
