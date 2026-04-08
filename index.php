@@ -2,7 +2,7 @@
 session_start();
 
 include('Admin/database.php')
-    ?>
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -82,6 +82,7 @@ include('Admin/database.php')
         </div>
     </header>
 
+<!--sweet alert berhasil logout -->
     <section class="bg-white min-h-screen dark:bg-gray-900 flex items-center">
         <div class="mx-auto max-w-7xl px-6 py-16 sm:px-8 lg:px-12">
             <?php
@@ -318,6 +319,7 @@ include('Admin/database.php')
         </div>
     </section>
 
+<!--Footer-->
     <section id="Footer">
         <footer class="bg-white dark:bg-gray-900">
             <div class="mx-auto max-w-7xl px-4 pt-16 pb-8 sm:px-6 lg:px-8 lg:pt-24">
