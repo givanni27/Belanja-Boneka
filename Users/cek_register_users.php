@@ -22,6 +22,13 @@ if (mysqli_num_rows($result) > 0) {
     exit();
 }
 
+$checkUserQuery = "SELECT * FROM users WHERE Email = '$Email'";
+$result = mysqli_query($koneksi, $checkUserQuery);
+if (mysqli_num_rows($result) > 0) {
+    header('Location: register.php?error=email_dipakai');
+    exit();
+}
+
 // Hash the password (use password_hash for security)
 
 // Insert user data with nama_masyarakat
