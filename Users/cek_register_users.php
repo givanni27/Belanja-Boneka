@@ -3,7 +3,7 @@ session_start();
 include '../Admin/database.php';
 
 // Get form data
-$Username = mysqli_real_escape_string($koneksi, $_POST['Username']);
+$Username = mysqli_real_escape_string($koneksi, $_POST['username_users']);
 $Email = mysqli_real_escape_string($koneksi, $_POST['Email']); // NEW variable
 $Password = $_POST['Password'];
 $Confirm_Password = $_POST['Confirm_Password'];
