@@ -7,12 +7,14 @@ include '../Admin/database.php';
 $Password = $_POST['Password'];
 $Email = $_POST['Email'];
 
+// cari user ke database
 $query = "SELECT * FROM users WHERE email= '$Email' AND password = '$Password'";
 $sql = mysqli_query($koneksi, $query);
 
 // mengecek data
 $cek = mysqli_num_rows($sql);
 
+// jika lebih dari 0 / ada
 if ($cek > 0) {
     $row = mysqli_fetch_array($sql);
     
@@ -22,7 +24,7 @@ if ($cek > 0) {
     $_SESSION['email'] = $row['email'];
     $_SESSION['berhasil'] = true;
 
-    // Redirect ke index.php (tanpa folder Users karena file ini satu level)
+    // jika berhasil masuk ke index.php
     header('Location: index.php');
     exit();
 } else {
