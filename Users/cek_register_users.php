@@ -10,7 +10,7 @@ $Confirm_Password = $_POST['Confirm_Password'];
 
 // Simple validation
 if ($Password !== $Confirm_Password) {
-    header('Location:register.php?error=password_tidaksama');
+    header('Location: register.php?error=password_tidaksama');
     exit();
 }
 
